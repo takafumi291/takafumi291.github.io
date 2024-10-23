@@ -958,7 +958,11 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: /*0.75em 0.75em*/ 0.25em 0.25em;
+		}
+		td:first-child {
+			white-space: nowrap; /* Prevent wrapping in the first column */
+			/*width: 150px; Set a fixed width for the first column */
 		}
 
 		table th {
